@@ -19,6 +19,7 @@ rm -rf /etc/yum.repos.d/*
 curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 curl -o /etc/yum.repos.d/docker-ce.repo https://mirrors.cloud.tencent.com/docker-ce/linux/centos/docker-ce.repo 
 yum makecache
+yum install epel-release
 
 # 接下来是安装docker
 yum install -y docker-ce
